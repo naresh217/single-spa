@@ -20,6 +20,7 @@ async function init() {
 
     // app5: The URL "/app5/..." is being redirected to "http://localhost:9005/..." this is done by the webpack proxy (webpack.config.js)
     await loadApp('app5', '/app5', '/app5/singleSpaEntry.js', '/app5/store.js', globalEventDistributor);
+    await loadApp('app6', '/app6', '/app6Angular/singleSpaEntry.js', null, globalEventDistributor);
 
     singleSpa.start();
 }

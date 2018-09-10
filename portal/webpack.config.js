@@ -73,6 +73,10 @@ module.exports = {
             "/app5": {
                 target: "http://localhost:9005",
                 pathRewrite: {"^/app5" : ""}
+            },
+            "/app6": {
+                target: "http://localhost:4200",
+                pathRewrite: {"^/app6Angular" : ""}
             }
         }
     }
